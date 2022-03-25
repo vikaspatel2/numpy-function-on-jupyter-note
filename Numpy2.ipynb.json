@@ -1,0 +1,386 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "9b174292",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "21a66a42",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([1, 2, 3, 4, 5])"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=[1,2,3,4,5]\n",
+    "myarr=np.array(a)\n",
+    "myarr\n",
+    "               "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "9c06ec4d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([1, 2, 3, 4, 5, 6])"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "myarr=np.array([1,2,3,4,5,6])\n",
+    "myarr"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "d455d32d",
+   "metadata": {
+    "scrolled": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the size of array: 3\n",
+      "enter the number4\n",
+      "enter the number5\n",
+      "enter the number7\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "array([4, 5, 7])"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=[]\n",
+    "x=int(input(\"Enter the size of array: \"))\n",
+    "for x in range(x):\n",
+    "    var=int(input(\"enter the number\"))\n",
+    "    a.append(var)\n",
+    "arr=np.array(a)\n",
+    "arr\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "179e8a33",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1 2 3]\n",
+      " [4 5 6]\n",
+      " [7 8 9]]\n",
+      "shape of array is (3, 3)\n",
+      "dimension of array is 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "#two dimension array\n",
+    "\n",
+    "a=[[1,2,3],[4,5,6],[7,8,9]]\n",
+    "myarr=np.array(a)\n",
+    "print(myarr)\n",
+    "print(\"shape of array is\",myarr.shape)\n",
+    "print(\"dimension of array is\",myarr.ndim)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "7bb2c84f",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0. 0. 0. 0. 0.]\n",
+      "[[0. 0. 0. 0.]\n",
+      " [0. 0. 0. 0.]\n",
+      " [0. 0. 0. 0.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "#zero function as in array\n",
+    "a=np.zeros(5)\n",
+    "print(a)\n",
+    "#\n",
+    "ab=np.zeros((3,4))\n",
+    "print(ab)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "5b6f9ca7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1. 1. 1. 1.]\n",
+      "[[1. 1. 1. 1. 1.]\n",
+      " [1. 1. 1. 1. 1.]\n",
+      " [1. 1. 1. 1. 1.]\n",
+      " [1. 1. 1. 1. 1.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#ones function\n",
+    "a=np.ones(4)\n",
+    "print(a)\n",
+    "\n",
+    "ab=np.ones((4,5))\n",
+    "print(ab)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "af57a375",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1. 0. 0. 0.]\n",
+      " [0. 1. 0. 0.]\n",
+      " [0. 0. 1. 0.]\n",
+      " [0. 0. 0. 1.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#eye function , makes diagonals in \"1\n",
+    "x=np.eye(4) #bydefault it make 2dimen \n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "f4cecdc4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1. 0. 0. 0. 0.]\n",
+      " [0. 1. 0. 0. 0.]\n",
+      " [0. 0. 1. 0. 0.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#we can also command of different row and columns  in \"eye \" fubct\n",
+    "y=np.eye(3,5) #but by only singel bracket\n",
+    "print(y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "1c98e82c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[2 0 0 0]\n",
+      " [0 4 0 0]\n",
+      " [0 0 6 0]\n",
+      " [0 0 0 8]]\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "array([2, 4, 6, 8])"
+      ]
+     },
+     "execution_count": 52,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#same we can change diagnals numer also \n",
+    "#by diag function\n",
+    "z=np.diag([2,4,6,8])#we have to give list value for that\n",
+    "print(z)\n",
+    "\n",
+    "\n",
+    "np.diag(z) #for taking our diag array"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "1c692dd3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[4 4 5 2]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "#import random\n",
+    "\n",
+    "#randint function with random module\n",
+    "ran=np.random.randint(2,6,4)\n",
+    "print(ran)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "9b696b62",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0.96496783 0.44963491 0.54235951 0.71275634 0.7694105 ]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#rand function\n",
+    "#one dimension \n",
+    "arr=np.random.rand(5)\n",
+    "print(arr)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "c4f1491b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[0.12791589 0.09825836 0.04078839 0.92663197 0.95775366]\n",
+      " [0.47844663 0.80411745 0.71857519 0.08904801 0.79509406]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#for 2 dimension\n",
+    "arr2=np.random.rand(2,5)\n",
+    "print(arr2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "a2793ac4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[-0.09561963  2.03818767  0.20083252  1.97851825  0.72383675]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#randn funct give values that is very close to  0 number\n",
+    "\n",
+    "#for 2 dimension\n",
+    "arr=np.random.randn(5)\n",
+    "print(arr)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "63e9c4d4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "### "
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
